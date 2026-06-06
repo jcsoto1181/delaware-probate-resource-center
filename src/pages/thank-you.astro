@@ -1,0 +1,140 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Thank You | Delaware Probate Resource Center">
+  <section class="thank-you-section">
+    <div class="thank-you-card">
+      <div class="checkmark">✓</div>
+
+      <h1>Thank You!</h1>
+
+      <p class="lead">
+        Your request has been received successfully.
+      </p>
+
+      <p>
+        Thank you for requesting the
+        <strong>Delaware Probate Property Guide.</strong>
+      </p>
+
+      <p>
+        We will review your information and send the guide to the email
+        address you provided.
+      </p>
+
+      <div class="next-steps">
+        <h2>What Happens Next?</h2>
+
+        <ul>
+          <li>✔ Your request has been received.</li>
+          <li>✔ The guide will be sent to your email.</li>
+          <li>✔ You may be contacted if additional assistance is requested.</li>
+        </ul>
+      </div>
+
+      <div class="contact-box">
+        <h3>Need Immediate Assistance?</h3>
+
+        <p>
+          If you're dealing with an inherited property and need answers right
+          away, we're happy to help.
+        </p>
+
+        <a href="/contact" class="button">
+          Contact Us
+        </a>
+      </div>
+
+      <a href="/" class="home-link">
+        ← Return to Home Page
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .thank-you-section {
+    padding: 80px 20px;
+    background: #f5f7fa;
+    min-height: 70vh;
+  }
+
+  .thank-you-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    text-align: center;
+  }
+
+  .checkmark {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #16a34a;
+    color: white;
+    font-size: 50px;
+    line-height: 90px;
+    font-weight: bold;
+  }
+
+  h1 {
+    color: #0f3b73;
+    margin-bottom: 15px;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .next-steps {
+    text-align: left;
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+
+  .next-steps ul {
+    padding-left: 20px;
+  }
+
+  .next-steps li {
+    margin-bottom: 12px;
+  }
+
+  .contact-box {
+    background: #eef6ff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #0f766e;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .button:hover {
+    opacity: .9;
+  }
+
+  .home-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #0f3b73;
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>

@@ -96,11 +96,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Complete the form below and we'll send you the guide.
       </p>
 
-      <form
-        name="probate-guide-request"
-        method="POST"
-        data-netlify="true"
-        class="guide-form"
+  
+        <form
+  name="probate-guide-request"
+  method="POST"
+  action="/thank-you/"
+  data-netlify="true"
+  class="guide-form"
+>
       >
 
         <input
