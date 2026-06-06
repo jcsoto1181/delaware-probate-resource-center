@@ -1,0 +1,83 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="/" class="logo">Delaware Probate Resource Center</a>
+
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/delaware-probate-guide">Guide</a>
+          <a href="/new-castle-county-probate">New Castle County</a>
+          <a href="/kent-county-probate">Kent County</a>
+          <a href="/sussex-county-probate">Sussex County</a>
+          <a href="/probate-faqs">FAQs</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <slot />
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f9fb;
+    color: #1f2933;
+  }
+
+  .container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+  }
+
+  .site-header {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+  }
+
+  .logo {
+    text-decoration: none;
+    font-weight: 800;
+    color: #12355b;
+    font-size: 1.1rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+  }
+</style>

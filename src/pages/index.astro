@@ -1,0 +1,266 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Delaware Probate Resource Center">
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <p class="eyebrow">
+        FREE DELAWARE PROBATE PROPERTY HELP
+      </p>
+
+      <h1>
+        Helping Delaware Families Navigate Inherited Property With Confidence
+      </h1>
+
+      <p class="hero-text">
+        Educational resources for executors, heirs, and families handling probate,
+        inherited homes, estate property decisions, and next steps in Delaware.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="/delaware-probate-guide" class="btn-primary">
+          Download Free Probate Guide
+        </a>
+
+        <a href="/contact" class="btn-secondary">
+          Schedule Free Consultation
+        </a>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>Not sure what to do with an inherited house?</h3>
+
+      <p>
+        Start by learning your options before making a rushed decision.
+      </p>
+
+      <ul>
+        <li>Understand probate basics</li>
+        <li>Review property options</li>
+        <li>Avoid common mistakes</li>
+        <li>Get Delaware-specific guidance</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <p class="eyebrow center">
+      HOW WE HELP
+    </p>
+
+    <h2 class="section-title">
+      A Resource Center Built for Delaware Families
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Free Probate Education</h3>
+        <p>
+          Learn the probate process, timelines, executor responsibilities,
+          and property options in plain English.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Delaware-Specific Guidance</h3>
+        <p>
+          Resources focused on New Castle, Kent, and Sussex County probate situations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Property Solutions</h3>
+        <p>
+          Explore your options whether you want to keep, sell, repair,
+          rent, or transfer inherited property.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+
+    <h2 class="section-title">
+      Delaware Probate Resources
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>New Castle County</h3>
+        <p>
+          Wilmington, Newark, Bear, Middletown, Claymont and surrounding areas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Kent County</h3>
+        <p>
+          Dover, Smyrna, Camden, Harrington, Felton and nearby communities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sussex County</h3>
+        <p>
+          Georgetown, Lewes, Rehoboth Beach, Milton, Seaford and more.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.hero {
+  background: #eef3f7;
+  padding: 90px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: auto;
+}
+
+.eyebrow {
+  color: #0f766e;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  color: #12355b;
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.hero-text {
+  font-size: 1.35rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #0f766e;
+  color: white;
+  text-decoration: none;
+  padding: 18px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  border: 1px solid #cbd5e1;
+  color: #12355b;
+  text-decoration: none;
+  padding: 18px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.info-card {
+  background: #12355b;
+  color: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.info-card h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.info-card ul {
+  line-height: 2;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.alt {
+  background: #f8fafc;
+}
+
+.section-title {
+  text-align: center;
+  color: #12355b;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dbe3ea;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.card h3 {
+  color: #12355b;
+}
+
+.card p {
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+
+  .hero-grid,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+</style>
+
+</BaseLayout>

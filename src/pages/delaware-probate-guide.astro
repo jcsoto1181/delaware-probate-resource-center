@@ -1,0 +1,293 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Free Delaware Probate Property Guide">
+
+<section class="guide-hero">
+  <div class="container guide-grid">
+
+    <div>
+      <p class="eyebrow">Free Delaware Probate Resource</p>
+
+      <h1>The Delaware Probate Property Guide</h1>
+
+      <p>
+        A simple step-by-step roadmap for Delaware families handling inherited
+        real estate, probate property decisions, and next steps after a loved
+        one passes.
+      </p>
+
+      <a class="button" href="/contact">
+        Request the Free Guide
+      </a>
+    </div>
+
+    <div class="guide-card">
+      <h2>What's Inside</h2>
+
+      <ul>
+        <li>Probate property basics</li>
+        <li>Executor responsibilities</li>
+        <li>Inherited home options</li>
+        <li>Common mistakes to avoid</li>
+        <li>Delaware county resources</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="guide-content">
+  <div class="container">
+
+    <h2>Who This Guide Is For</h2>
+
+    <p>
+      This guide is designed for executors, administrators, heirs, and families
+      who are trying to understand what to do when an estate includes a house
+      or other real estate in Delaware.
+    </p>
+
+    <h2>What You'll Learn</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Probate Basics</h3>
+        <p>
+          Understand the basic role probate may play when property is part of an estate.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Property Options</h3>
+        <p>
+          Review common options such as keeping, renting, repairing, or selling the property.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Next Steps</h3>
+        <p>
+          Learn what questions to ask before making a major decision about an inherited home.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="cta-box">
+      <h2>Need Help Thinking Through an Inherited Property?</h2>
+
+      <p>
+        You can request a free probate property consultation to better understand your options.
+      </p>
+
+      <a class="button" href="/contact">
+        Request Free Help
+      </a>
+    </div>
+
+    <div class="cta-box">
+
+      <h2>Request The Free Delaware Probate Property Guide</h2>
+
+      <p>
+        Complete the form below and we'll send you the guide.
+      </p>
+
+      <form
+        name="probate-guide-request"
+        method="POST"
+        data-netlify="true"
+        class="guide-form"
+      >
+
+        <input
+          type="hidden"
+          name="form-name"
+          value="probate-guide-request"
+        />
+
+        <input
+          type="text"
+          name="first-name"
+          placeholder="First Name"
+          required
+        />
+
+        <input
+          type="text"
+          name="last-name"
+          placeholder="Last Name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+        />
+
+        <select name="county">
+          <option>Select County</option>
+          <option>New Castle County</option>
+          <option>Kent County</option>
+          <option>Sussex County</option>
+        </select>
+
+        <textarea
+          rows="5"
+          name="situation"
+          placeholder="Tell us about your situation..."
+        ></textarea>
+
+        <button type="submit">
+          Request Guide
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+  }
+
+  .guide-hero {
+    background: linear-gradient(135deg, #eaf4f8, #ffffff);
+    padding: 90px 0;
+  }
+
+  .guide-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .eyebrow {
+    color: #0f766e;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    color: #12355b;
+    font-size: 4rem;
+    line-height: 1.05;
+    margin: 10px 0 20px;
+  }
+
+  h2,
+  h3 {
+    color: #12355b;
+  }
+
+  p,
+  li {
+    font-size: 1.08rem;
+    line-height: 1.8;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 24px;
+    background: #0f766e;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .guide-card {
+    background: #12355b;
+    color: white;
+    padding: 34px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+  }
+
+  .guide-card h2 {
+    color: white;
+  }
+
+  .guide-content {
+    padding: 80px 0;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 35px 0;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid #dbe3ea;
+    border-radius: 14px;
+    padding: 26px;
+  }
+
+  .cta-box {
+    margin-top: 60px;
+    background: #eef3f7;
+    padding: 40px;
+    border-radius: 16px;
+  }
+
+  .guide-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .guide-form input,
+  .guide-form textarea,
+  .guide-form select {
+    padding: 16px;
+    border: 1px solid #dbe3ea;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .guide-form button {
+    background: #0f766e;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    .guide-grid,
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+    }
+  }
+</style>
+
+</BaseLayout>
